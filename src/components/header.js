@@ -5,7 +5,14 @@ import { Text } from 'react-native';
 
 // Make a component
 const Header = () => {
-  return <Text>Megnetic</Text>;
+  const { textStyle } = styles;
+  return <Text style={textStyle}>Magnetic</Text>;
+};
+
+const styles = {
+  textStyle: {
+    fontSize: 20
+  }
 };
 
 // Make component available to other parts of the app
