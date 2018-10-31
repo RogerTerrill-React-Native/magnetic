@@ -3,11 +3,11 @@ import React from 'react';
 import { Text, View } from 'react-native';
 
 // Make a component
-const Header = () => {
+const Header = props => {
   const { textStyle, viewStyle } = styles;
   return (
     <View style={viewStyle}>
-      <Text style={textStyle}>Magnetic</Text>
+      <Text style={textStyle}>{props.headerText}</Text>
     </View>
   );
 };
@@ -18,7 +18,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: 60,
-    paddingTop: 15,
+    paddingTop: 0,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 20 },
     shadowOpacity: 0.2,
