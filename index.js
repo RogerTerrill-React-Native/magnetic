@@ -3,7 +3,7 @@ import React from 'react';
 import { Text, AppRegistry } from 'react-native';
 
 // Create a component
-const App = () => <Text>Some Text</Text>;
+const App = () => <Text>Some Textwwww</Text>;
 
 // Render it to the device
 AppRegistry.registerComponent('magnetic', () => App);
